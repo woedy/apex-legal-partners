@@ -8,4 +8,7 @@ cmds = ["npm ci"]
 cmds = ["npm run build"]
 
 [start]
-cmd = "npx serve dist -s -l $PORT"
+cmd = "nginx -g 'daemon off;' -c /app/nginx.conf"
+
+[static]
+directory = "dist"
