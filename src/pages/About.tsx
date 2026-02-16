@@ -78,7 +78,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                 <p>
-                  Apex Legal Partners was established in New York by attorneys
+                  Apex Legal Partners was established in Zurich by attorneys
                   who spent years at large, prestigious firms and saw an
                   opportunity to deliver the same caliber of legal work with
                   greater responsiveness, transparency, and personal attention.

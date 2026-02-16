@@ -140,7 +140,7 @@ const Contact = () => {
                           <FormControl>
                             <Input
                               type="tel"
-                              placeholder="(555) 123-4567"
+                              placeholder="+41 44 000 00 00"
                               {...field}
                             />
                           </FormControl>

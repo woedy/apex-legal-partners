@@ -43,11 +43,13 @@ const FeaturedAttorneys = () => {
                 className="group block text-center"
               >
                 <div
-                  className={`w-28 h-28 rounded-full mx-auto mb-4 flex items-center justify-center ${avatarColors[i % avatarColors.length]} group-hover:scale-105 transition-transform duration-300`}
+                  className={`w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden border-2 border-border group-hover:scale-105 transition-transform duration-300`}
                 >
-                  <span className="text-primary-foreground text-2xl font-heading font-semibold">
-                    {attorney.initials}
-                  </span>
+                  <img
+                    src={attorney.imageUrl}
+                    alt={attorney.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-lg font-heading font-semibold text-foreground mb-1">
                   {attorney.name}

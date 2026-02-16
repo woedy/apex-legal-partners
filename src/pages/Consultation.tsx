@@ -23,7 +23,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { practiceAreas } from "@/data/siteData";
+import { practiceAreas, siteInfo } from "@/data/siteData";
 
 const consultationSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -101,8 +101,8 @@ const Consultation = () => {
               </p>
               <p className="text-sm text-muted-foreground/60 font-body mb-6">
                 If your matter is urgent, please call us directly at{" "}
-                <a href="tel:(212) 555-0190" className="text-accent">
-                  (212) 555-0190
+                <a href={`tel:${siteInfo.phone}`} className="text-accent">
+                  {siteInfo.phone}
                 </a>
                 .
               </p>
@@ -174,7 +174,7 @@ const Consultation = () => {
                           <FormControl>
                             <Input
                               type="tel"
-                              placeholder="(555) 123-4567"
+                              placeholder="+41 44 000 00 00"
                               {...field}
                             />
                           </FormControl>

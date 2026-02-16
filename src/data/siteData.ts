@@ -22,6 +22,7 @@ export interface Attorney {
   languages?: string[];
   email: string;
   phone: string;
+  imageUrl: string;
 }
 
 export interface CaseResult {
@@ -56,9 +57,9 @@ export interface SiteFAQ {
 export const siteInfo = {
   name: "Apex Legal Partners",
   tagline: "Modern counsel. Practical solutions.",
-  phone: "(212) 555-0190",
+  phone: "+41 44 211 11 11",
   email: "info@apexlegalpartners.com",
-  address: "One Liberty Plaza, Suite 4200\nNew York, NY 10006",
+  address: "Bahnhofstrasse 10, 8001 Zürich, Switzerland",
   hours: "Monday–Friday: 8:30 AM – 6:00 PM",
 };
 
@@ -284,16 +285,17 @@ export const attorneys: Attorney[] = [
     bioShort:
       "Sarah leads Apex Legal Partners with over 18 years of experience in corporate law and complex transactions. She is recognized for her strategic approach to M&A and her commitment to building lasting client relationships.",
     bioLong:
-      "Sarah Chen founded Apex Legal Partners with the belief that clients deserve legal counsel that is both sophisticated and accessible. Over her career, she has advised on transactions valued at over $2 billion, including cross-border mergers, private equity investments, and corporate restructurings.\n\nBefore founding the firm, Sarah practiced at a leading international law firm in New York, where she developed deep expertise in corporate governance and securities regulation. She is known for her ability to distill complex legal issues into clear, actionable guidance.\n\nSarah is an active member of the New York State Bar Association's Corporate Law Section and has been recognized by Super Lawyers as a Rising Star. Outside the office, she serves on the board of a nonprofit providing legal services to underserved communities.",
+      "Sarah Chen founded Apex Legal Partners with the belief that clients deserve legal counsel that is both sophisticated and accessible. Over her career, she has advised on transactions valued at over $2 billion, including cross-border mergers, private equity investments, and corporate restructurings.\n\nBefore founding the firm, Sarah practiced at a leading international law firm in Zurich, where she developed deep expertise in corporate governance and international commercial law. She is known for her ability to distill complex legal issues into clear, actionable guidance.\n\nSarah is an active member of the Swiss Bar Association and has been recognized for her excellence in corporate law. Outside the office, she serves on the board of a nonprofit providing legal services to underserved communities.",
     practiceAreas: ["Corporate & Commercial", "Mergers & Acquisitions"],
     education: [
       "Harvard Law School, J.D., cum laude",
       "New York University, B.A., Economics",
     ],
-    admissions: ["New York", "Connecticut"],
+    admissions: ["Zurich", "Geneva", "New York"],
     languages: ["English", "Mandarin"],
     email: "schen@apexlegalpartners.com",
-    phone: "(212) 555-0191",
+    phone: "+41 44 211 11 12",
+    imageUrl: "/assets/Sarah Chen.jpg",
   },
   {
     name: "Michael Torres",
@@ -312,28 +314,30 @@ export const attorneys: Attorney[] = [
       "Columbia Law School, J.D.",
       "Georgetown University, B.A., Government",
     ],
-    admissions: ["New York", "New Jersey", "District of Columbia"],
+    admissions: ["Zurich", "Vaud"],
     email: "mtorres@apexlegalpartners.com",
-    phone: "(212) 555-0192",
+    phone: "+41 44 211 11 13",
+    imageUrl: "/assets/Michael Torres.jpg",
   },
   {
-    name: "Rebecca Okafor",
-    slug: "rebecca-okafor",
+    name: "Rebecca Oscars",
+    slug: "rebecca-oscars",
     title: "Partner",
     initials: "RO",
     bioShort:
       "Rebecca advises technology companies, creative businesses, and research institutions on all aspects of intellectual property protection and strategy.",
     bioLong:
-      "Rebecca Okafor combines a technical background with sharp legal instincts to help clients protect and leverage their intellectual property. Her practice spans patent counseling, trademark portfolio management, copyright matters, trade secret protection, and IP licensing.\n\nRebecca works closely with clients in the technology, life sciences, media, and consumer products sectors. She has particular expertise in IP issues arising from emerging technologies, including artificial intelligence, blockchain, and biotechnology.\n\nBefore practicing law, Rebecca worked as a software engineer, giving her a practical understanding of the technologies her clients develop. She holds a Bachelor of Science from MIT and a J.D. from Stanford Law School, where she was an editor of the Stanford Technology Law Review.",
+      "Rebecca Oscars combines a technical background with sharp legal instincts to help clients protect and leverage their intellectual property. Her practice spans patent counseling, trademark portfolio management, copyright matters, trade secret protection, and IP licensing.\n\nRebecca works closely with clients in the technology, life sciences, media, and consumer products sectors. She has particular expertise in IP issues arising from emerging technologies, including artificial intelligence, blockchain, and biotechnology.\n\nBefore practicing law, Rebecca worked as a software engineer, giving her a practical understanding of the technologies her clients develop. She holds a Bachelor of Science from MIT and a J.D. from Stanford Law School, where she was an editor of the Stanford Technology Law Review.",
     practiceAreas: ["Intellectual Property", "Corporate & Commercial"],
     education: [
       "Stanford Law School, J.D.",
       "Massachusetts Institute of Technology, B.S., Computer Science",
     ],
-    admissions: ["New York", "California"],
-    languages: ["English", "Igbo"],
-    email: "rokafor@apexlegalpartners.com",
-    phone: "(212) 555-0193",
+    admissions: ["Zurich", "California"],
+    languages: ["English", "French"],
+    email: "roscars@apexlegalpartners.com",
+    phone: "+41 44 211 11 14",
+    imageUrl: "/assets/Rebecca Oscars.jpg",
   },
   {
     name: "David Kim",
@@ -349,9 +353,10 @@ export const attorneys: Attorney[] = [
       "NYU School of Law, J.D.",
       "University of Pennsylvania, B.A., Political Science",
     ],
-    admissions: ["New York"],
+    admissions: ["Zurich"],
     email: "dkim@apexlegalpartners.com",
-    phone: "(212) 555-0194",
+    phone: "+41 44 211 11 15",
+    imageUrl: "/assets/David Kim.jpg",
   },
 ];
 
@@ -439,7 +444,7 @@ export const insights: Insight[] = [
       "Five Legal Essentials for Startup Founders Before Their First Funding Round",
     slug: "legal-essentials-startup-founders-funding",
     date: "2024-10-02",
-    author: "Rebecca Okafor",
+    author: "Rebecca Oscars",
     tags: ["Corporate", "Startups", "Venture Capital"],
     excerpt:
       "Before signing a term sheet, founders need to get their legal house in order. These five fundamentals can make or break your fundraising process.",
@@ -494,7 +499,7 @@ export const insights: Insight[] = [
     title: "Protecting Intellectual Property in the Age of AI",
     slug: "protecting-intellectual-property-age-of-ai",
     date: "2024-07-10",
-    author: "Rebecca Okafor",
+    author: "Rebecca Oscars",
     tags: ["IP", "Technology", "AI"],
     excerpt:
       "Artificial intelligence is creating new challenges and opportunities for intellectual property protection. Here's how businesses can adapt their IP strategies.",

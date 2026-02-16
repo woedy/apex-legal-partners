@@ -77,10 +77,12 @@ const Attorneys = () => {
                   to={`/attorneys/${attorney.slug}`}
                   className="group block bg-card border border-border rounded-lg overflow-hidden hover:shadow-md transition-all duration-200"
                 >
-                  <div className="aspect-[3/4] bg-muted flex items-center justify-center">
-                    <span className="text-4xl font-heading text-muted-foreground/50">
-                      {attorney.initials}
-                    </span>
+                  <div className="aspect-[3/4] bg-muted overflow-hidden">
+                    <img
+                      src={attorney.imageUrl}
+                      alt={attorney.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
                   <div className="p-5">
                     <h3 className="text-lg font-heading text-foreground group-hover:text-accent transition-colors">

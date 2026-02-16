@@ -18,8 +18,8 @@ const Footer = () => {
             </div>
             <p className="text-primary-foreground/60 text-sm font-body leading-relaxed mb-6">
               {siteInfo.tagline} We provide sophisticated legal counsel with a
-              client-first approach, serving businesses and individuals in New York
-              and beyond.
+              client-first approach, serving businesses and individuals in
+              Switzerland and beyond.
             </p>
             <div className="flex gap-4">
               {["LinkedIn", "Twitter"].map((s) => (

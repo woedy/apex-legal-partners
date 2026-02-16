@@ -63,10 +63,12 @@ const AttorneyProfile = () => {
             {/* Sidebar */}
             <aside className="space-y-6">
               {/* Avatar */}
-              <div className="bg-muted rounded-lg aspect-square flex items-center justify-center">
-                <span className="text-6xl font-heading text-muted-foreground/40">
-                  {attorney.initials}
-                </span>
+              <div className="bg-muted rounded-lg aspect-square overflow-hidden border border-border">
+                <img
+                  src={attorney.imageUrl}
+                  alt={attorney.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Contact */}
